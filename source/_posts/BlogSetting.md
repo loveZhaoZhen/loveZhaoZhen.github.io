@@ -14,6 +14,29 @@ tags: [blog]
 找到theme修改为：
 `themes: next`
 <!-- more-->
+
+## Hexo同步部署上传
+* 在github上新建一个`branch`**Hexo**
+* 在blog根目录安装插件`npm install hexo-git-backup --save`
+* 在根目录下`_config.yml`文件结尾添加
+```
+# 同步部署
+backup:
+  type: git
+  repository:
+    github: git@github.com:loveZhaoZhen/loveZhaoZhen.github.io.git,Hexo
+```
+* 进行同步部署 `hexo b(backup)`  
+Tips:
+>Update
+>if you install with --save, you must remove firstly when you update it.
+>`$ npm remove hexo-git-backup`
+>`$ npm install hexo-git-backup --save`
+
+>You may get some troubles by your computer' permission。
+>just do `sudo hexo b`
+
+
 ## 配置Next主题 
 [Next官方配置文档](http://theme-next.iissnan.com/theme-settings.html)  
 

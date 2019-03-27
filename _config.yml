@@ -97,6 +97,7 @@ search:
   format: html
   limit: 10000
 
+# 同步部署
 backup:
   type: git
   repository:
