@@ -1,0 +1,295 @@
+{
+    "type": "Live2D Model Setting",
+    "name": "Kaga",
+    "model": "kaga.moc",
+    "textures": [
+        "kaga.2048/texture_00.png"
+    ],
+    "layout": {        
+		"width": 4,
+		"center_x": -0.4,
+		"center_y": -0.2
+	},
+    "hit_areas": [
+        {
+            "name": "head",
+            "id": "D_REF.HEAD"
+        },
+        {
+            "name": "chest",
+            "id": "D_REF.OP"
+        },
+        {
+            "name": "headwear",
+            "id": "D_REF.MJ"
+        },
+        {
+            "name": "arm_left",
+            "id": "D_REF.LS"
+        },
+        {
+            "name": "leg_right",
+            "id": "D_REF.TT"
+        }
+    ],
+    "loop_params": [
+        {
+          "id": "PARAM_HUAHUOidle",
+          "duration": 3000,
+          "weight": 1.0
+        }
+    ],
+    "motions": {
+        "idle": [
+            {
+                "file": "motions/idle0.mtn",
+                "fade_in": 0,
+                "fade_out": 0
+            },
+            {
+                "file": "motions/idle1-24.mtn",
+                "fade_in": 0,
+                "fade_out": 0
+            },
+            {
+                "file": "motions/idle25-49.mtn",
+                "fade_in": 0,
+                "fade_out": 0
+            },
+            {
+                "file": "motions/idle50-74.mtn",
+                "fade_in": 0,
+                "fade_out": 0
+            },
+            {
+                "file": "motions/idle75-99.mtn",
+                "fade_in": 0,
+                "fade_out": 0
+            },
+            {
+                "file": "motions/idle100.mtn",
+                "fade_in": 0,
+                "fade_out": 0
+            }            
+        ],
+        "start": [
+            {
+                "file": "motions/start.mtn",
+                "sound": "sound/denglu.mp3",
+                "text": "公平与正义只适用于强者，弱者只能缩在角落里哀泣",
+                "fade_in": 0,
+                "fade_out": 0
+            }
+        ],
+        "tap_head": [
+            {
+                "file": "motions/tap_head.mtn",
+                "sound": "sound/chumo.mp3",
+                "text": "有什么疑问吗？",
+                "fade_in": 500,
+                "fade_out": 0
+            },
+            {
+                "file": "motions/tick_1.mtn",
+                "sound": "sound/zhujiemian1.mp3",
+                "text": "我是一切的征服者，无论对谁",
+                "fade_in": 200,
+                "fade_out": 0,
+                "priority": 2,
+                "time_limit": {
+                    "minute": 5
+                }
+            },            
+            {
+                "file": "motions/tick_2.mtn",
+                "sound": "sound/zhujiemian2.mp3",
+                "text": "我们的敌人很强，但正因为如此，才有摧残殆尽的价值，呵呵呵呵呵……",
+                "fade_in": 200,
+                "fade_out": 0,
+                "priority": 2,
+                "time_limit": {
+                    "minute": 15
+                },
+                "intimacy": {
+                    "min": 25,
+                    "bonus": 0
+                }
+            },
+            {
+                "file": "motions/tick_3.mtn",
+                "sound": "sound/zhujiemian3.mp3",
+                "text": "五航战的孩子们？她们好好努力的话还是值得一看的",
+                "fade_in": 200,
+                "fade_out": 0,
+                "priority": 2,
+                "time_limit": {
+                    "minute": 15
+                },
+                "intimacy": {
+                    "min": 25,
+                    "bonus": 0
+                }
+            },
+            {
+                "file": "motions/intimacyD0.mtn",
+                "sound": "sound/exp_shiwang.mp3",
+                "text": "看来你不是我追求的勇者…",
+                "fade_in": 200,
+                "fade_out": 0,
+                "priority": 6,
+                "intimacy": {
+                    "max": 0,
+                    "bonus": 0
+                }
+            },
+            {
+                "file": "motions/intimacyU25.mtn",
+                "sound": "sound/exp_mosheng.mp3",
+                "text": "弱者被淘汰是必然的下场，不甘心的话就变强啊",
+                "fade_in": 200,
+                "fade_out": 0,
+                "priority": 6,
+                "intimacy": {
+                    "min": 25,
+                    "max": 49,
+                    "bonus": 0
+                }
+            },
+            {
+                "file": "motions/intimacyD75.mtn",
+                "sound": "sound/exp_xihuan.mp3",
+                "text": "虽然我自己也很纳闷，不明白为什么有这种心情，这是兽性本能吗？",
+                "fade_in": 200,
+                "fade_out": 0,
+                "priority": 6,
+                "intimacy": {
+                    "min": 51,
+                    "max": 75,
+                    "bonus": 0
+                }
+            },
+            {
+                "file": "motions/intimacyU100.mtn",
+                "sound": "sound/exp_ai.mp3",
+                "text": "虽然有很多话想跟你说，但是一看到你的脸，就全都想不起来了",
+                "fade_in": 200,
+                "fade_out": 0,
+                "priority": 6,
+                "intimacy": {
+                    "min": 100,
+                    "bonus": 0
+                }
+            },
+            {
+                "file": "motions/intimacy50.mtn",
+                "sound": "sound/exp_youhao.mp3",
+                "text": "如果有一天你输了，那只能说明你太弱了，弱者被淘汰也是正常，不过，谁让你是我的人呢，只好由我来替你报仇了",
+                "fade_in": 200,
+                "fade_out": 0,
+                "priority": 6,
+                "intimacy": {
+                    "min": 29,
+                    "max": 71,
+                    "bonus": 0
+                }
+            }
+        ],
+        "tap_headwear": [
+            {
+                "file": "motions/tap_MJ.mtn",
+                "sound": "sound/HPgaoji.mp3",
+                "text": "死斗时间到了~呵呵，呵呵呵……",
+                "fade_in": 200,
+                "fade_out": 0,
+                "priority": 4,
+                "intimacy": {
+                    "min": 49,
+                    "bonus": 0
+                }
+            },
+            {
+                "file": "motions/tap_MJOP.mtn",
+                "sound": "sound/jineng.mp3",
+                "text": "战场上只有强者才能生存哦！",
+                "fade_in": 500,
+                "fade_out": 0,
+                "priority": 6,
+                "intimacy": {
+                    "min": 65,
+                    "bonus": 0
+                }
+            },
+            {
+                "file": "motions/tap_MJMJ.mtn",
+                "sound": "sound/qianghua.mp3",
+                "text": "不错的感觉……想到了不少新的手段呢",
+                "fade_in": 500,
+                "fade_out": 0,
+                "priority": 6,
+                "intimacy": {
+                    "min": 65,
+                    "bonus": 0
+                }
+            }
+        ],
+        "tap_chest": [
+            {
+                "file": "motions/tap_op.mtn",
+                "sound": "sound/TSchumo.mp3",
+                "text": "……如果這樣能讓你放鬆一下的話",
+                "fade_in": 500,
+                "fade_out": 0,
+                "intimacy": {
+                    "min": 25,
+                    "bonus": 0
+                }
+            },
+            {
+                "file": "motions/tap_RWZX.mtn",
+                "sound": "sound/jianqikaizhan.mp3",
+                "text": "用你们死前最后的挣扎来取悦我把…呵呵…",
+                "fade_in": 400,
+                "fade_out": 0,
+                "priority": 8,
+                "next_mtn": "tap_RWCG"
+            }
+        ],
+        "tap_leg_right": [
+            {
+                "file": "motions/tap_TT.mtn",
+                "sound": "sound/huigang.mp3",
+                "text": "屠戮过敌人之后，就是愉快的奖励时间了，尽情享受短暂的喘息时间吧。",
+                "fade_in": 0,
+                "fade_out": 0,
+                "intimacy": {
+                    "min": 49,
+                    "bonus": 0
+                }
+            }
+        ],
+        "tap_arm_left": [
+            {
+                "file": "motions/tap_LSmin.mtn",
+                "sound": "sound/MVP.mp3",
+                "text": "弱者就是这个下场，太弱了，才会死，仅此而已",
+                "fade_in": 0,
+                "fade_out": 0,
+                "intimacy": {
+                    "min": 49,
+                    "bonus": 0
+                }
+            },
+            {
+                "file": "motions/tap_LSmax.mtn",
+                "sound": "sound/chakan.mp3",
+                "text": "指挥官，你这么看着我，会让我有些想把你吃掉的",
+                "fade_in": 0,
+                "fade_out": 0,
+                "intimacy": {
+                    "min": 49,
+                    "bonus": 0
+                }
+            }
+        ]
+    }
+}

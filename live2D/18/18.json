@@ -1,0 +1,102 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "不知火舞",
+	"model": "huowu.moc",
+	"textures": [
+		"huowu.2048/texture_00.png"
+	],
+	"hit_areas": [{
+			"name": "head",
+			"id": "D_REF.HEAD"
+		},
+		{
+			"name": "arm_left",
+			"id": "D_REF.HANDL"
+		},
+		{
+			"name": "arm_right",
+			"id": "D_REF.HANDR"
+		},
+		{
+			"name": "chest",
+			"id": "D_REF.CHEST"
+		},
+		{
+			"name": "skirt",
+			"id": "D_REF.QUN"
+		}
+	],
+    "layout": {
+		"width": 2.6445,
+		"center_x": 0.1307,
+		"center_y": -0.1126
+	},
+	"motions": {
+		"idle": [{
+			"file": "motions/idle_01.mtn",
+			"fade_in": 300,
+			"fade_out": 300
+		}],
+		"start": [{
+			"file": "motions/V.mtn",
+			"sound": "sounds/huowu.mp3",
+			"fade_in": 100,
+			"fade_out": 0
+		}],
+        "tap_head": [{
+				"file": "motions/tap_face_01.mtn",
+				"fade_in": 100,
+				"fade_out": 0
+			},
+			{
+				"file": "motions/tap_face_02.mtn",
+				"fade_in": 100,
+				"fade_out": 0
+			},
+			{
+				"file": "motions/tap_face_03.mtn",
+				"fade_in": 100,
+				"fade_out": 0
+			},
+			{
+				"file": "motions/tap_face_04.mtn",
+				"fade_in": 100,
+				"fade_out": 0
+			},
+			{
+				"file": "motions/tap_face_05.mtn",
+				"fade_in": 100,
+				"fade_out": 0
+			}
+		],
+		"tap_chest": [{
+			"file": "motions/tap_Chest.mtn",
+			"fade_in": 100,
+			"fade_out": 0
+		}],
+		"tap_arm_left": [{
+			"file": "motions/tap_HandL.mtn",
+			"fade_in": 100,
+			"fade_out": 0
+		}],
+		"tap_arm_right": [{
+			"file": "motions/tap_HandR.mtn",
+			"fade_in": 100,
+			"fade_out": 0
+		}],
+		"tap_skirt": [{
+			"file": "motions/tap_Qunzi.mtn",
+			"fade_in": 100,
+			"fade_out": 0
+		}],
+        "random": [{
+			"file": "motions/tap_HandL.mtn",
+			"fade_in": 100,
+			"fade_out": 0
+		},{
+			"file": "motions/tap_HandR.mtn",
+			"fade_in": 100,
+			"fade_out": 0
+		}]		
+	}
+}

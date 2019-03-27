@@ -1,0 +1,119 @@
+{
+    "version": "Live2DMoePet 1.1",
+    "model": "A.moc",
+    "textures": [
+        "A.1024/texture_00.png",
+        "A.1024/texture_01.png",
+        "A.1024/texture_02.png"
+    ],
+    "hit_areas": [
+        {
+            "name": "head",
+            "id": "D_REF.PT_HEAD"
+        },
+        {
+            "name": "body",
+            "id": "D_REF.PT_BODY"
+        }
+    ],
+    "layout": {
+        "center_x": 0,
+        "center_y": -0.28,
+        "width": 2.5
+    },
+    "motions": {
+        "idle": [
+            {
+                "file": "motions/idle/HIBIKI_M01.mtn"
+            },
+            {
+                "file": "motions/idle/HIBIKI_M04.mtn"
+            },
+            {
+                "file": "motions/idle/HIBIKI_M08.mtn"
+            },
+            {
+                "file": "motions/idle/HIBIKI_M09.mtn"
+            }
+        ],
+        "tap_head": [
+            {
+                "file": "motions/tap/DK_HIBIKI_0001.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0001.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0011.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0011.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0021.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0021.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0031.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0031.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0041.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0041.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0061.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0061.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0064.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0064.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0067.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0067.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0070.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0070.mp3"
+            }
+        ],
+        "tap_body": [
+            {
+                "file": "motions/tap/DK_HIBIKI_0001.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0001.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0011.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0011.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0021.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0021.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0031.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0031.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0041.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0041.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0061.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0061.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0064.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0064.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0067.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0067.mp3"
+            },
+            {
+                "file": "motions/tap/DK_HIBIKI_0070.mtn",
+                "sound": "motions/tap/DK_HIBIKI_0070.mp3"
+            }
+        ]
+        
+    },
+    "physics": "A.physics.json",
+    "pose": "pose.json"
+}

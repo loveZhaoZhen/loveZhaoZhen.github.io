@@ -1,0 +1,76 @@
+{
+	"version": "Sample 1.0.0",
+	"model": "model/baozi1.moc",
+	"textures": [
+		"model/baozi1.512/texture_00.png",
+		"model/baozi1.512/texture_01.png",
+		"model/baozi1.512/texture_02.png",
+		"model/baozi1.512/texture_03.png",
+		"model/baozi1.512/texture_04.png"
+	],
+	"physics": "model/baozi1.physics.json",
+	"layout": {
+		"width": 3,
+		"center_x": 0,
+		"center_y": -0.15
+	},
+	"hit_areas": [
+		{
+			"name": "head",
+			"id": "D_PSD.face"
+		},
+		{
+			"name": "body",
+			"id": "D_PSD.88"
+		}
+	],
+	"motions": {
+		"idle": [
+			{"file": "motions/Mbaozi_stand.mtn"}
+		],
+		"tap_head": [
+			{"file": "motions/Mbaozi_PV.mtn"},
+			{"file": "motions/Mbaozi_motoubiyi.mtn"},
+			{"file": "motions/Mbaozi_motoufouding.mtn"},
+			{"file": "motions/Mbaozi_motouhaixiu.mtn"},
+			{"file": "motions/Mbaozi_sajiao.mtn"},
+			{"file": "motions/Mbaozi_haixiu.mtn"},
+			{"file": "motions/Mbaozi_kuazan.mtn"},
+			{"file": "motions/Mbaozi_biyi.mtn"},
+			{"file": "motions/Mbaozi_nu.mtn"},
+			{"file": "motions/Mbaozi_motion2.mtn"},
+			{"file": "motions/Mbaozi_motion3.mtn"},
+			{"file": "motions/Mbaozi_motion1.mtn"},
+			{"file": "motions/Mbaozi_motion4.mtn"},
+			{"file": "motions/Mbaozi_motion5.mtn"},
+			{"file": "motions/Mbaozi_motion6.mtn"},
+			{"file": "motions/Mbaozi_nuchang.mtn"},
+			{"file": "motions/Mbaozi_dazhaohu.mtn"},
+			{"file": "motions/Mbaozi_kending.mtn"},
+			{"file": "motions/Mbaozi_fouding.mtn"},
+			{"file": "motions/Mbaozi_tanqi.mtn"},
+			{"file": "motions/Mbaozi_hengge.mtn"},
+			{"file": "motions/Mbaozi_chidongxi.mtn"},
+			{"file": "motions/Mbaozi_sikao.mtn"},
+			{"file": "motions/Mbaozi_tishi2.mtn"},
+			{"file": "motions/Mbaozi_tishi1.mtn"},
+			{"file": "motions/Mbaozi_tishi3.mtn"}		
+		],
+		"tap_body": [
+			{"file": "motions/Mbaozi_youshang.mtn"},
+			{"file": "motions/Mbaozi_fighting.mtn"},
+			{"file": "motions/Mbaozi_kun.mtn"},
+			{"file": "motions/Mbaozi_normal.mtn"},
+			{"file": "motions/Mbaozi_xiunu.mtn"},
+			{"file": "motions/Mbaozi_tiaopi.mtn"},
+			{"file": "motions/Mbaozi_weixiao.mtn"},
+			{"file": "motions/Mbaozi_weixiaochang.mtn"}		
+		],
+		"new_msg": [
+			{
+				"file": "motions/Mbaozi_hengge.mtn",
+				"sound": "voice/new_msg.mp3"
+			}
+		]
+	}
+}
