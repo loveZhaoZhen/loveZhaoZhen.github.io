@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>使用Hexo框架搭建博客(Archlinux) | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Hexo官网 搭建框架 进入准备放置博客文件的文件夹 $ npm install hexo-cli -g $ hexo init blog $ cd blog $ npm install $ hexo server">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Hexo框架搭建博客(Archlinux)">
+<meta property="og:url" content="https://lovezhaozhen.github.io/2019/03/20/Blog/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hexo官网 搭建框架 进入准备放置博客文件的文件夹 $ npm install hexo-cli -g $ hexo init blog $ cd blog $ npm install $ hexo server">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-03-20T12:30:02.000Z">
+<meta property="article:modified_time" content="2020-04-27T05:47:27.791Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://loveZhaoZhen.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/20/Blog/" class="article-date">
+  <time datetime="2019-03-20T12:30:02.000Z" itemprop="datePublished">2019-03-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      使用Hexo框架搭建博客(Archlinux)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo官网</a></p>
+<h2 id="搭建框架"><a href="#搭建框架" class="headerlink" title="搭建框架"></a>搭建框架</h2><ul>
+<li>进入准备放置博客文件的文件夹</li>
+<li>$ npm install hexo-cli -g</li>
+<li>$ hexo init blog</li>
+<li>$ cd blog</li>
+<li>$ npm install</li>
+<li>$ hexo server<a id="more"></a>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><code>$ hexo new [layout] &lt;title&gt;</code><br>可以在命令中指定文章的布局（layout），默认为 post，可以通过修改 _config.yml 中的 default_layout 参数来指定默认布局。</li>
+</ul>
+<p><strong>layout(布局）</strong><br>Hexo 有三种默认布局：post、page 和 draft，它们分别对应不同的路径，而自定义的其他布局和 post 相同，都将储存到 source/_posts 文件夹。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">布局	路径</span><br><span class="line">post	source&#x2F;_posts</span><br><span class="line">page	source</span><br><span class="line">draft	source&#x2F;_drafts</span><br></pre></td></tr></table></figure>
+<h4 id="显示文章摘要信息"><a href="#显示文章摘要信息" class="headerlink" title="显示文章摘要信息"></a>显示文章摘要信息</h4><p>在文章中加入一个 <code>&lt;!-- more--&gt;</code></p>
+<h4 id="创建categories与tags"><a href="#创建categories与tags" class="headerlink" title="创建categories与tags"></a>创建<em>categories<em>与</em>tags</em></h4><ul>
+<li>在blog根目录<br><code>hexo new page categories</code><br><code>hexo new page tags</code></li>
+<li>打开<em>source/categories/index.md</em><br>添加 `type: “categories”</li>
+<li>打开<em>source/tags/index.md</em><br>添加 `type: “tags”</li>
+<li>给模板添加<em>categories<em>与</em>tags</em><br>打开<em>scarffolds/post.md</em><ul>
+<li>添加<em>categories:</em></li>
+<li>添加<em>tags:</em><br>如下<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>使用时只在新的文章创建后在文件首部填上该文章categories与tags即可</li>
+<li>一般不需要再修改</li>
+<li>source/categories/index.md*</li>
+<li>source/tags/index.md*<br>(文章里填入的categories与tags会自动生成在该页面上)</li>
+</ul>
+<p><strong>Tips</strong>:添加tags有必须严格按照如下两种格式</p>
+<ol>
+<li>把tags放在中括号<code>[]</code>里</li>
+<li>用短划线<code>-</code>列出来<br>如<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 博客配置</span><br><span class="line">date: 2019-03-21 13:47:44</span><br><span class="line">categories: </span><br><span class="line">- 博客搭建      (Hexo不支持指定多个同级分类)</span><br><span class="line">- 主题配置     （此时 &quot;主题配置&quot;为&quot;博客搭建&quot;的子分类)</span><br><span class="line">tags: [blog, 配置, 学习,其他]</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: linuxCommands</span><br><span class="line">date: 2019-03-20 22:39:32</span><br><span class="line">categories: linux系统</span><br><span class="line">tags: </span><br><span class="line">- linux</span><br><span class="line">- commands</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h2><p><code>npm install hexo-server --save</code><br>安装完成后，输入以下命令以启动服务器，您的网站会在 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。</p>
+<p>启动服务器<br><code>$ hexo server</code></p>
+<p>可执行下列的其中一个命令，让 Hexo 在生成完毕后自动部署网站，两个命令的作用是相同的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --deploy</span><br><span class="line">$ hexo deploy --generate</span><br><span class="line">上面两个命令可以简写为</span><br><span class="line">$ hexo g -d</span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ul>
+<li><h3 id="将博客部署到Github"><a href="#将博客部署到Github" class="headerlink" title="将博客部署到Github"></a>将博客部署到Github</h3></li>
+</ul>
+<ol>
+<li><p>在github上新建 repository 名字必须是 <code>username.github.io</code> </p>
+</li>
+<li><p>githubSHH配置<br><a href="https://help.github.com/en/articles/connecting-to-github-with-ssh" target="_blank" rel="noopener">githubSSH官方文档</a></p>
+<ul>
+<li><p>安装git<br>  <code>sudo pacman -S git</code></p>
+</li>
+<li><p>需要设置好姓名和邮箱之后才能开始使用 Git</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name  &quot;username&quot;</span><br><span class="line">$ git config --global user.email &quot;useremail&quot;</span><br></pre></td></tr></table></figure>
+<p>  查看git设置 <code>git config --list</code></p>
+</li>
+<li><p>安装openssh<br>  <code>sudo pacman -S openssh</code></p>
+</li>
+<li><p>生成SSH秘钥<br>  <code>ssh-keygen -t rsa -b 4096 -C &quot;useremail&quot;</code></p>
+</li>
+<li><p>打开 ～.ssh/id_rsa.pub 复制全部内容<br>粘贴在github上 settings -&gt; SSH and GPG keys -&gt;New SSH key </p>
+</li>
+<li><p>测试SSH设置是否成功<br><code>$ ssh -T git@GitHub.com</code><br>output如下即可算是正常<br><code>Hi &lt;&lt;username&gt;&gt;! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code></p>
+</li>
+<li><p>配置 _config.yml </p>
+<ul>
+<li>修改url<br>  url: https://<em>username</em>.github.io</li>
+<li>修改deploy<br>  type: git<br>  repo: <a href="mailto:git@github.com">git@github.com</a>:<em>username</em>/<em>username</em>.github.io.git<br>  branch: master</li>
+</ul>
+</li>
+<li><p>安装deployer插件<br>  <code>$ npm install hexo-deployer-git --save</code></p>
+</li>
+<li><p>部署<br><code>hexo g</code> <code>hexo d(hexo deploy)</code><br><code>(hexo g -d)</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="标签-分类数量统计不准确？"><a href="#标签-分类数量统计不准确？" class="headerlink" title="标签/分类数量统计不准确？"></a>标签/分类数量统计不准确？</h3><p>因为 Hexo 有缓存的功能，因此有时候你会发现在 标签 和 分类 页面中的数量统计并不准确。 出现这个问题时，可以按照以下步骤重新生成站点的内容：</p>
+<ul>
+<li>删除站点目录下的 db.json 文件</li>
+<li>在站点目录下执行命令 hexo clean</li>
+<li>在站点目录下执行命令，重新生成 hexo generate</li>
+<li>当执行完以上步骤后，可以在本地启动服务器来验证下是否已经解决问题。</li>
+</ul>
+<h3 id="文章资源文件夹"><a href="#文章资源文件夹" class="headerlink" title="文章资源文件夹"></a>文章资源文件夹</h3><p>对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo也提供了更组织化的方式来管理资源。这个稍微有些复杂但是管理资源非常方便的功能可以通过将 config.yml 文件中的 post_asset_folder 选项设为 true 来打开。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
+<p>当资源文件管理功能打开后，Hexo将会在你每一次通过 <code>hexo new [layout] &lt;title&gt;</code>命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。<br>Tips:如果用gitpage，切将图片文件放在与 markdown文件同名的文件夹下，则文章中的图片路径不需要写文件夹<br>如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">在Blog.md中编辑文章，需要用到同名的Blog文件夹下的URL.png图片,则Blog.md中填写的路径应如下:</span><br><span class="line">![修改url](URL.png &quot;修改url&quot;)</span><br><span class="line">而不是![修改url](Blog&#x2F;URL.png &quot;修改url&quot;)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://lovezhaozhen.github.io/2019/03/20/Blog/" data-id="ck9i285bg0000xjce7qb8bajy" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/" rel="tag">blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/03/20/linuxCommands/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          linuxCommands
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/linux%E7%B3%BB%E7%BB%9F/">linux系统</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/commands/" rel="tag">commands</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/commands/" style="font-size: 10px;">commands</a> <a href="/tags/linux/" style="font-size: 20px;">linux</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 10px;">数据库</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/06/InstallArch/">安装Archlinux(UEFI引导+GPT分区)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/09/LinuxAudio/">Win10、Arch双系统，Arch经常莫名没声音</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/16/Mariadb/">Archlinux下安装使用Mariadb</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/07/vscodeDebug/">vscode编译调试c语言</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/05/muti-SSH/">Archlinux下多SSH的管理</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
